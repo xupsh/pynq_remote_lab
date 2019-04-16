@@ -1,0 +1,10 @@
+crontab -e
+*/1 * * * * /etc/pynq_remote/listen/reset.sh
+
+* * * * * /etc/pynq_remote/listen/reset.sh
+* * * * * sleep 10; /etc/pynq_remote/listen/reset.sh
+* * * * * sleep 20; /etc/pynq_remote/listen/reset.sh
+* * * * * sleep 30; /etc/pynq_remote/listen/reset.sh
+* * * * * sleep 40; /etc/pynq_remote/listen/reset.sh
+* * * * * sleep 50; /etc/pynq_remote/listen/reset.sh
+*/1 * * * * /usr/bin/python3 /etc/pynq_remote/listen/sensor.py
