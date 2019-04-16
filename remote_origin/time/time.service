@@ -1,0 +1,8 @@
+[Unit]
+Description=time
+After=network.target 
+[Service] 
+Type=simple 
+ExecStart=/bin/bash /etc/pynq_remote/time/time.sh
+[Install]
+WantedBy=multi-user.target
